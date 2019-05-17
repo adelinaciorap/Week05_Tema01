@@ -19,12 +19,12 @@ namespace _1.School_classes
             Students stu3 = new Students("Mihai", "Cretu", 7);
             stu3.AddComment("Mihai is not doing the homeworks.");
 
-            Discipline mathematics = new Discipline("Mathematics", 4);
+            Discipline mathematics = new Discipline("Mathematics", 4, 10);
             mathematics.AddComment("Students understand Mathematics");
 
-            Discipline music = new Discipline("Music", 3);
-            Discipline chemistry = new Discipline("Chemistry", 3);
-            Discipline english = new Discipline("English", 1);
+            Discipline music = new Discipline("Music", 1,3);
+            Discipline chemistry = new Discipline("Chemistry", 3, 6);
+            Discipline english = new Discipline("English", 4, 8);
 
             Teachers teach1 = new Teachers("Marcel", "Stan", new List<Discipline>() { mathematics, chemistry });
             teach1.AddComment("Marcel Stan is an experienced teacher");
@@ -37,8 +37,7 @@ namespace _1.School_classes
             school.PrintSchoolName();
             firstClass.ToString();
             secondClass.ToString();
-
-            // Show comments
+            
             stu1.PrintComment();
             stu2.PrintComment();
             stu3.PrintComment();

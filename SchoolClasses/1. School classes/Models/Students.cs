@@ -17,7 +17,7 @@ namespace _1.School_classes
             this.StudentClassNumber = studentClassNumber;
         }
 
-        // Properties
+       
         public int StudentClassNumber { get; set; }
         
     }

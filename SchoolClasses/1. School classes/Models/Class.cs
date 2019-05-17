@@ -14,11 +14,11 @@ namespace _1.School_classes
             
             public Class(List<Students> students, List<Teachers> teachers, string classID)
             {
-                this.students = students;
-                this.teachers = teachers;
-                this.classID = classID;
+                this.Students = students;
+                this.Teachers = teachers;
+                this.ClassID = classID;
             }
-            
+             
             public List<Students> Students
             {
                 get { return this.students; }
@@ -50,9 +50,10 @@ namespace _1.School_classes
 
                     foreach (var item in element.Discipline)
                     {
-                        Console.WriteLine("Discipline name: " + item.DisciplineName);
-                        Console.WriteLine("Number of hours: " + item.NumberOfHours);
-                        Console.WriteLine();
+                    Console.WriteLine("Discipline name: " + item.DisciplineName);
+                    Console.WriteLine("Number of lectures: " + item.NumberOfLectures);
+                    Console.WriteLine("Number of exercises: " + item.NumberOfExercises);
+                    Console.WriteLine();
                     }
                 }
 

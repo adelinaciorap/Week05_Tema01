@@ -11,21 +11,23 @@ namespace _1.School_classes
     {
 
         private string disciplineName;
-        private int numberOfHours;
+        private int numberOfLectures;
+        private int numberOfExercises;
 
 
-        public Discipline(string disciplineName, int numberOfHours)
+        public Discipline(string disciplineName, int numberOfLectures, int numberOfExercises)
         {
             this.DisciplineName = disciplineName;
-            this.NumberOfHours = numberOfHours;
+            this.NumberOfLectures = numberOfLectures;
+            this.NumberOfExercises = numberOfExercises;
         }
         
         public string DisciplineName { get; set; }
 
 
-        public int NumberOfHours { get; set; }
+        public int NumberOfExercises { get; set; }
 
-
+        public int NumberOfLectures { get; set; }
 
     }
 
